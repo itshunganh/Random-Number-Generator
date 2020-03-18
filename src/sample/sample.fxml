@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" style="-fx-background-color: #c7c8fa;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <JFXButton fx:id="runBtn" layoutX="330.0" layoutY="40.0" prefHeight="50.0" prefWidth="125.0" style="-fx-border-color: #9f0f00;" text="RUN" textFill="#9f0f00">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="loadBtn" layoutX="465.0" layoutY="40.0" prefHeight="50.0" prefWidth="125.0" style="-fx-border-color: #9f0f00;" text="LOAD" textFill="#9f0f00">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="dropBtn" layoutX="600.0" layoutY="40.0" prefHeight="50.0" prefWidth="125.0" style="-fx-border-color: #9f0f00;" text="RESET" textFill="#9f0f00">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="minText" focusColor="#9f0f00" labelFloat="true" layoutX="25.0" layoutY="25.0" prefHeight="25.0" prefWidth="275.0" promptText="ENTER MIN:" style="-fx-border-color: #9f0f00;" unFocusColor="#9f0f00">
+         <font>
+            <Font name="Cambria Bold" size="12.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="maxText" focusColor="#9f0f00" labelFloat="true" layoutX="25.0" layoutY="70.0" prefHeight="25.0" prefWidth="275.0" promptText="ENTER MAX:" style="-fx-border-color: #9f0f00;" unFocusColor="#9f0f00">
+         <font>
+            <Font name="Cambria Bold" size="12.0" />
+         </font></JFXTextField>
+      <Label fx:id="msgLabel" alignment="CENTER" layoutX="25.0" layoutY="115.0" prefHeight="100.0" prefWidth="700.0" style="-fx-border-color: #9f0f00;" textFill="#9f0f00">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font></Label>
+      <JFXListView fx:id="numListView" layoutX="25.0" layoutY="225.0" prefHeight="250.0" prefWidth="700.0" />
+   </children>
+</AnchorPane>
